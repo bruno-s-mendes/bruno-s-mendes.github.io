@@ -25,3 +25,10 @@ font-weight: 700 bold;
 #top-nome{
     margin-left: 30px;
 }
+.format-corpo{
+    margin-top: 30px;
+    padding:0% 20%;
+}
+#sobre p{
+    text-align: justify;
+}
