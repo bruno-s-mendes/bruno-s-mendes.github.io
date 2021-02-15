@@ -1,0 +1,10 @@
+h1{
+font-family: 'Montserrat', sans-serif;
+font-weight: 700 bold;
+}
+#foto{
+    border-radius: 100%;
+}
+.top{
+    display: inline-flex;
+}
