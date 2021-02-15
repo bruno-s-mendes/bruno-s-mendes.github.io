@@ -13,11 +13,12 @@ font-weight: 700 bold;
     border-radius: 100%;
 }
 #top{
-    position: relative;
+    position: fixed;
     display: inline-flex;
-    justify-content: center;
-   
-    
+    top: 0;  
+    padding: 30px 20% 0 20%;
+    max-height: 280px;
+    background-color: #c2dfe3ff;
 }
 #top-list{
     list-style-type: none;
@@ -28,6 +29,9 @@ font-weight: 700 bold;
 .format-corpo{
     margin-top: 30px;
     padding:0% 20%;
+}
+#sobre{
+    margin-top: 300px;
 }
 #sobre p{
     text-align: justify;
