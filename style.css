@@ -8,6 +8,8 @@ color: #253237ff;
 font-weight: 700 bold;
 }
 #foto{
+    padding: 15px;
+    background-color: #9db4c0ff;
     border-radius: 100%;
 }
 .top{
