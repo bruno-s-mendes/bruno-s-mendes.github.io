@@ -12,11 +12,11 @@ font-weight: 700 bold;
     background-color: #9db4c0ff;
     border-radius: 100%;
 }
-.top{
+#top{
     position: relative;
     display: inline-flex;
     justify-content: center;
-    margin-left: 30%;
+   
     
 }
 #top-list{
