@@ -1,16 +1,21 @@
 body{
     font-family: 'Montserrat', sans-serif;
-
+    background-color: #c2dfe3ff;
+    color: rgb(55, 64, 68);
 }
 h1{
-
+color: #253237ff;
 font-weight: 700 bold;
 }
 #foto{
     border-radius: 100%;
 }
 .top{
+    position: relative;
     display: inline-flex;
+    justify-content: center;
+    margin-left: 30%;
+    
 }
 #top-list{
     list-style-type: none;
