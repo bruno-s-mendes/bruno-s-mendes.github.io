@@ -1,5 +1,9 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
 h1{
-font-family: 'Montserrat', sans-serif;
+
 font-weight: 700 bold;
 }
 #foto{
@@ -7,4 +11,7 @@ font-weight: 700 bold;
 }
 .top{
     display: inline-flex;
+}
+#top-list{
+    list-style-type: none;
 }
