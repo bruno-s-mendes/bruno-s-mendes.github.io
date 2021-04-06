@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,56 +9,147 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+      emailjs.init("user_PMbJ6smTvJc66FlASgmWr");
+    })();
+    </script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <header>
         <img src="" alt="Logo">
-        <nav>
-          <a href="">Início</a>
-          <div class="dropdown">
-            <a class="dropdownbtn">Trabalhos</a>
-            <div class="dropdown-content">
-              <a href="">Trybe (projetos)</a>
-              <a href="">Para empresas</a>
-            </div>
-          </div>
-          <a href="">Contato</a>
-        </nav>
     </header>
-    <div class="hero-container">
-      <div class="photo" style="background-image: url('Imagens/-space-169573-min.jpg')">
-        <p>Bruno Mendes</p>
-    </div>
-    </div>
-    <Section class="text-img">
-    <h2>Sobre Mim</h2>
-    <hr>
-      <div class="content-container">
-        <img id="fei" src="Imagens/logo_fei.svg" alt="Logo da FEI">
-        <div class="paragraph">
-          <p>Sou formado em engenharia mecânica pelo centro universitário da FEI, onde pude aprender diversas metodologias relacionadas a engenharia, criação, produção e gestão de projetos. Além do curso regular, fui contemplado com uma bolsa de estudos para realizar 1 ano da minha formação em Londres. Esse intercâmbio foi essencial para adquirir competências diversas, além de propiciar a ampliação da minha capacidade de comunicação, maior facilidade de adaptação a mudanças e variedades culturais e fluência no idioma inglês.  </p>
-          <p>Atuei durante um ano e meio na indústria com engenharia de manufatura e gestão da produção. Após esse período, surgiram oportunidades de atuar no mercado de tecnologia. Fiz alguns desenvolvimentos de sites com integração de plataformas e APIs, porem realizei estes serviços em plataformas especializadas e com ajuda de especialistas para funções especificas como edição de HTML e CSS. Neste período eu aprendi bastante sobre como funciona o mercado e me interessei pela área.  </p>
+    <section class="main-content-container">
+      <div id="trybe-works" class="">
+        <input type="radio" value="lessons-learned" name="trybe-projects" id="lessons-learned" class="radio">
+        <label for="lessons-learned"> Projeto Lessons Learned</label>
+        <div id="lessons-learned-content" class="">
+          <br>
+          <p>Projeto Lessons Learned </p>
+          <br>
+          <p>Primeiro projeto realizado no curso. Este projeto foi desenvolvido em HTML e CSS com requisitos obrigatrios. Desenvolvi uma página com os conteúdos que havia aprendido e alguns dos que irei aprender. </p>
+          <p>O resultado pode ser visto na imágem abaixo e acessando meu reposotório de projetos no github é possivel ter acesso aos códigos e abrir aa página.</p>
+          <br>
+          <a href="https://github.com/bruno-s-mendes/Meus-Projetos" target="_blank">Link para acessar meu repositório de projetos</a>
+          <br>
+          <div class="content-img">
+            <img src="Imagens/Lessons-learned.png" alt="Printscreen da página do projeto lessons learned">
+          </div>
+        </div>
+        <div class="space"></div>
+        <input type="radio" value="playground-functions" name="trybe-projects" id="playground-functions" class="radio">
+        <label for="playground-functions">Projeto Pixels Art</label>
+        <div id="playground-functions-content">
+          <br>
+          <p>Projeto Pixels Art </p>
+          <br>
+          <p>Este projeto foi desenvolvido em HTML, CSS e javascript com requisitos obrigatrios. Foi desenvolvido uma página para criar uma matrix de 'pixels' em branco que podem ser coloridos pelo usuário.</p>
+          <p>A matriz pode ter o tamanho definido pelo usuário, que seleciona uma cor na paleta de cores e, ao clicar nos quaradinhos em branco ele é preenchido com a cor escolhida.</p>
+          <p>O resultado pode ser visto na imágem abaixo e acessando meu reposotório de projetos no github é possivel ter acesso aos códigos e abrir aa página.</p>
+          <br>
+          <a href="https://github.com/bruno-s-mendes/Meus-Projetos" target="_blank">Link para acessar meu repositório de projetos</a>
+          <br>
+          <div class="content-img">
+            <img src="Imagens/pixels-art.png" alt="printscreen da página web do projeto pixels art">
+          </div>
+        </div>
+        <div class="space"></div>
+        <input type="radio" value="pixelsArt-toDoList" name="trybe-projects" id="pixelsArt-toDoList" class="radio">
+        <label for="pixelsArt-toDoList"> Projeto To Do List</label>
+        <div id="pixelsArt-toDoList-content">
+          <br>
+          <p>Projeto To do List </p>
+          <br>
+          <p>Este projeto foi desenvolvido em HTML, CSS e javascript ao mesmo tempo do pixels art. A página consiste em ser um criador de lista de tarefas.</p>
+          <p>O usuário escreve uma tarefa que precisa realizar, adiciona à lista e depois de cumprida pode apagar ou marcar como completa. Os dados desta lista ficam salvos no navegador, portanto o usuário pode fechar e abrir o navegador novamente que os dados não serão perdidos.</p>
+          <p>O resultado pode ser visto na imágem abaixo e acessando meu reposotório de projetos no github é possivel ter acesso aos códigos e abrir aa página.</p>
+          <br>
+          <a href="https://github.com/bruno-s-mendes/Meus-Projetos" target="_blank">Link para acessar meu repositório de projetos</a>
+          <br>
+          <div class="content-img">
+            <img src="" alt="printscreen da página web do projeto to do list">
+          </div>
+        </div>
+        <div class="space"></div>
+          <input type="radio" value="facebook-signup" name="trybe-projects" id="facebook-signup" class="radio">
+          <label for="facebook-signup">Projeto Facebook SignUp</label>
+        <div id="facebook-signup-content">
+          <br>
+          <p>Projeto Facebook Signup </p>
+          <br>
+          <p>Este projeto foi desenvolvido em HTML, CSS e javascript em dupla. O objetivo foi criar uma pagina igual a de cadastro do facebook..</p>
+          <p>O usuário preenche os dados necessários no formulário e depois clica em castre-se. Após clicar em cadastrar, os dados coletados no formulário são exibidos na página, como forma de simular o envio das informações para um procesamento de dados.</p>
+          <p>O resultado pode ser visto na imágem abaixo e acessando meu reposotório de projetos no github é possivel ter acesso aos códigos e abrir aa página.</p>
+          <br>
+          <a href="https://github.com/bruno-s-mendes/Meus-Projetos" target="_blank">Link para acessar meu repositório de projetos</a>
+          <br>
+          <div class="content-img">
+            <img src="Imagens/facebook-signup.png" alt="printscreen da página web do projeto to do list">
+          </div>
         </div>
       </div>
-      <hr>
-      <div class="content-container">
-        <img id="trybe" src="Imagens/trybe-logo.png" alt="Logo trybe">
-       <div class="paragraph">
-         <p>No final de 2020 eu conheci a Trybe e decidi me candidatar para o processo seletivo, fui aceito e agora estou realizando o curso. Sempre me interessei em realizar trabalhos que facilitassem a vida das pessoas, a engenharia me abriu esta oportunidade, e recentemente realizando trabalhos para web, descobri novas possibilidades ainda mais proximas da rotina de todos.</p>
-         <p>No curso da Trybe, estou aprendendo muito sobre tecnologia, lógica de programação, aperfeiçoamento de código e a ementa ainda inclui diversas ferramentas de desenvolvimento web, tanto front-end quanto back-end. Além dessas hard-skills, o curso é bastante focado em soft-skills, o que me tornará uma pessoa desenvolvedora completa, pronto para iniciar uma carreira de sucesso em tecnologia. </p>
-         <p>O conhecimento adquirido em um mês e meio de curso me possibilitou a montagem desse portfólio com visual mais moderno e com diversas funcionalidades responsivas apenas escrevendo os códigos HTM, CSS e JavaScript. Além disso desenvolvi diversos projetos da Trybe e para empresas que podem ser acessados nos links abaixo. </p>
-       </div>
+      <div id="pro-works" class="">
+        
       </div>
-      <div class="btn-container">
-        <div class="btn">
-         <a href="">Projetos Trybe</a>
-       </div>
-       <div class="btn">
-         <a href="">Projetos para empresas</a>
-       </div>
+      <div class="sidebar">
+        <img id="profile-picture" src="Imagens/IMG_0577.jpg" alt="foto bruno">
+        <div class="menu-nav">
+          <input type="radio" id="inicio-btn" name="menu" class="radio">
+          <label for="inicio-btn">Sobre Mim</label>
+          <div class="dropdown">
+            <label class="dropdownbtn">Trabalhos</label>
+            <div class="dropdown-content">
+              <input type="radio" id="trybe" name="menu" class="radio">
+              <label for="trybe">Trybe (projetos)</label>
+              <input type="radio" id="empresa" name="menu" class="radio">
+              <label for="empresa">Para empresas</label>
+            </div>
+          </div>
+          <input type="radio" id="contato" name="menu" class="radio">
+          <label for="contato" class="menu-nav">Contato</label>
+        </div>
       </div>
-    </Section>
-    <Footer>
+        <div id="inicio-container" class="hide">
+          <div id="inicio-container-format">
+            <div class="content-container">
+              <img id="fei-logo" src="Imagens/logo_fei.svg" alt="Logo da FEI">
+              <ul class="paragraph">
+                <li>Sou formado em Engenharia Mecânica pelo Centro Universitário da FEI, onde pude aprender diversas metodologias relacionadas à engenharia, criação, produção e gestão de projetos.</li>
+                <li>Em 2015, realizei um intercâmbio pelo Ciências Sem Fronteiras em Londres, na London South Bank University, onde aprimorei minhas habilidades de comunicação, adaptação e alcancei fluência em inglês.</li>
+                <li>Atuei durante um ano e meio na área de manufatura e gestão da produção da fábrica de caminhões da Mercedes-Benz em São Bernardo do Campo.</li>
+                <br>
+                <br>
+              </ul>
+            </div>
+            <hr>
+            <div class="content-container">
+              <img id="trybe-logo" src="Imagens/trybe-logo.png" alt="Logo trybe">
+              <ul class="paragraph">
+                <li>Desenvolvi dois sites em plataformas especializadas. Neste período aprendi bastante sobre como funciona o mercado de desenvolvimento web e me interessei pela área.</li>
+                <li>No final de 2020 conheci a Trybe, fui aceito no processo seletivo e estou realizando o curso.</li>
+                <li>Estou aprendendo muito sobre tecnologia, lógica de programação, aperfeiçoamento de código e a ementa ainda inclui diversas ferramentas de desenvolvimento web, tanto front-end quanto back-end.</li>
+                <li>Além dessas hard-skills, o curso é bastante focado em soft-skills, o que me tornará um desenvolvedor completo, pronto para iniciar uma carreira de sucesso em tecnologia.</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div id="formulario" class="hide">
+        <h2>Entre em contato</h2>
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
+          <label class="form-label">Nome:</label><br>
+          <input type="text" name="user_name" class="form-input"><br>
+          <label class="form-label">Email</label><br>
+          <input type="email" name="user_email" class="form-input"><br>
+          <label class="form-label">Message</label><br>
+          <textarea name="message" cols="60" rows="10" class="form-message"></textarea><br>
+          <button type="submit" value="Send" class="btn">enviar</button>
+        </form>
+      </div>
+    </section>
+    <Footer class="hide">
       <div class="footer-container">
         <nav>
           <ul>
@@ -77,6 +168,5 @@
         </div>
       </div>
     </Footer>
-    <script src="script.js"></script>
 </body>
 </html>
