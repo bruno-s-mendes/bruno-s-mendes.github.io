@@ -25,6 +25,15 @@ const trybeFunc = () => {
   });
 }
 
+const workFunc = () => {
+  const contactBTN = document.getElementById('empresa');
+  const contactContainer = document.getElementById('pro-works');
+  const menu = document.querySelector('.menu-nav');
+  menu.addEventListener('click', () => {
+    (contactBTN.checked === true)? contactContainer.style.display = 'block' : contactContainer.style.display = 'none';
+  });
+}
+
 function email() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -45,5 +54,6 @@ window.onload = () => {
   email();
   contatoFunc();
   trybeFunc();
+  workFunc();
 };
 
