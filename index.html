@@ -20,7 +20,21 @@
 </head>
 <body>
     <header>
+      <a href="index.html">
         <img src="Imagens/siteLogo.png" alt="Logo">
+      </a>
+      <nav id="menu-mobile">
+        <input type="radio" value="menu" name="menu" id="menu" class="radio">
+        <label for="menu"><i id="menu-icon" class="fas fa-bars"></i></label>
+        <ul class="mobile-list">
+          <li>Sobre Mim</li>
+          <li>Trabalhos Trybe</li>
+          <li>Trabalhos para Empresas</li>
+          <li>contato</li>
+          <li>LinkedIn</li>
+          <li>Github</li>
+        </ul>
+      </nav>
     </header>
     <section class="main-content-container">
       <div id="pro-works" class="">
@@ -115,30 +129,14 @@
           <label for="contato" class="menu-nav">Contato</label>
           <div class="social">
             <a href="https://www.linkedin.com/in/bruno-s-mendes/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/bruno-s-mendes/Meus-Projetos" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/bruno-s-mendes" target="_blank"><i class="fab fa-github"></i></a>
           </div>
         </div>
       </div>
       <div id="trybe-works" class="">
-        <input type="radio" value="lessons-learned" name="trybe-projects" id="lessons-learned" class="radio">
-        <label for="lessons-learned"> Projeto Lessons Learned</label>
-        <div id="lessons-learned-content" class="">
-          <br>
-          <p>Projeto Lessons Learned </p>
-          <br>
-          <p>Primeiro projeto realizado no curso. Este projeto foi desenvolvido em HTML e CSS com requisitos obrigatrios. Desenvolvi uma página com os conteúdos que havia aprendido e alguns dos que irei aprender. </p>
-          <p>O resultado pode ser visto na imágem abaixo e acessando meu reposotório de projetos no github é possivel ter acesso aos códigos e abrir aa página.</p>
-          <br>
-          <a href="https://github.com/bruno-s-mendes/Meus-Projetos" target="_blank">Link para acessar meu repositório de projetos</a>
-          <br>
-          <div class="content-img">
-            <img src="Imagens/Lessons-learned.png" alt="Printscreen da página do projeto lessons learned">
-          </div>
-        </div>
-        <div class="space"></div>
-        <input type="radio" value="playground-functions" name="trybe-projects" id="playground-functions" class="radio">
-        <label for="playground-functions">Projeto Pixels Art</label>
-        <div id="playground-functions-content">
+        <input type="radio" value="pixelsArt-toDoList" name="trybe-projects" id="pixelsArt-toDoList" class="radio">
+        <label for="pixelsArt-toDoList">Projeto Pixels Art</label>
+        <div id="pixelsArt-toDoList-content">
           <br>
           <p>Projeto Pixels Art </p>
           <br>
@@ -150,23 +148,6 @@
           <br>
           <div class="content-img">
             <img src="Imagens/pixels-art.png" alt="printscreen da página web do projeto pixels art">
-          </div>
-        </div>
-        <div class="space"></div>
-        <input type="radio" value="pixelsArt-toDoList" name="trybe-projects" id="pixelsArt-toDoList" class="radio">
-        <label for="pixelsArt-toDoList"> Projeto To Do List</label>
-        <div id="pixelsArt-toDoList-content">
-          <br>
-          <p>Projeto To do List </p>
-          <br>
-          <p>Este projeto foi desenvolvido em HTML, CSS e javascript ao mesmo tempo do pixels art. A página consiste em ser um criador de lista de tarefas.</p>
-          <p>O usuário escreve uma tarefa que precisa realizar, adiciona à lista e depois de cumprida pode apagar ou marcar como completa. Os dados desta lista ficam salvos no navegador, portanto o usuário pode fechar e abrir o navegador novamente que os dados não serão perdidos.</p>
-          <p>O resultado pode ser visto na imágem abaixo e o link que redireciona para o meu Github Pages deste projeto.</p>
-          <br>
-          <a href="https://bruno-s-mendes.github.io/todo-list.io/" target="_blank">Link para acessar o GithubPages</a>
-          <br>
-          <div class="content-img">
-            <img src="Imagens/to-do-list.png" alt="printscreen da página web do projeto to do list">
           </div>
         </div>
         <div class="space"></div>
@@ -201,6 +182,70 @@
         <br>
         <div class="content-img">
           <img src="Imagens/shopping-cart.png" alt="printscreen da página web do projeto to do list">
+        </div>
+      </div>
+      <div class="space"></div>
+      <input type="radio" value="movie-card" name="trybe-projects" id="movie-card" class="radio">
+      <label for="movie-card"> Movie card Library CRUD</label>
+      <div id="movie-card-content" class="">
+        <br>
+        <p>Projeto Movie card Library CRUD </p>
+        <br>
+        <p>Projeto desenvolvido em React, com o intuito de explorar as propriedades de CRUD no java script. A ideia principal do projeto foi criar uma página de catálogo de filmes, que consulta um arquivo que simula uma API e fazer requisições para essa API, editando, apagando, e criando arquivos.  </p>
+        <p>O resultado pode ser visto na imágem abaixo e acessando meu reposotório no GithubPages é possivel naver no site criado.</p>
+        <br>
+        <a href="https://bruno-s-mendes.github.io/sd-010-a-project-movie-card-library-crud/#/" target="_blank">Link para acessar o projeto no Github Pages</a>
+        <br>
+        <div class="content-img">
+          <img src="Imagens/mclCRUD.png" alt="Printscreen da página do projeto lessons learned">
+        </div>
+      </div>
+      <div class="space"></div>
+      <input type="radio" value="front-end-store" name="trybe-projects" id="front-end-store" class="radio">
+      <label for="front-end-store"> Front-End Store</label>
+      <div id="front-end-store-content" class="">
+        <br>
+        <p>Projeto Front-End Online Store </p>
+        <br>
+        <p>Projeto Realizado em grupo, com a utilização de React, o objetivo foi construir uma loja online que faz consultas a API do Mercado Livre, cria um carrinho de compras, salva os itens no local storage, soma valores e permite a finalização da compra(não autoriza cobranças). </p>
+        <p>O resultado pode ser visto na imágem abaixo e acessando meu reposotório no GithubPages é possivel naver no site criado.</p>
+        <br>
+        <a href="https://bruno-s-mendes.github.io/sd-010-a-project-frontend-online-store/#/" target="_blank">Link para acessar o projeto no Github Pages</a>
+        <br>
+        <div class="content-img">
+          <img src="Imagens/FEStore.png" alt="Printscreen da página do projeto lessons learned">
+        </div>
+      </div>
+      <div class="space"></div>
+      <input type="radio" value="star-wars" name="trybe-projects" id="star-wars" class="radio">
+      <label for="star-wars"> Star Wars Planet Search</label>
+      <div id="star-wars-content" class="">
+        <br>
+        <p>Projeto Star Wars Planet Search </p>
+        <br>
+        <p>Projeto realizado com React, Redux, Thunk. O objetivo è acessar uma API que possi dados dos planetas do filme Star Wars, filtrar esses resultados, e exibir para o usuário o resultado desejado.</p>
+        <p>O resultado pode ser visto na imágem abaixo e acessando meu reposotório no GithubPages é possivel naver no site criado.</p>
+        <br>
+        <a href="https://bruno-s-mendes.github.io/sd-010-a-project-starwars-planets-search/" target="_blank">Link para acessar o projeto no Github Pages</a>
+        <br>
+        <div class="content-img">
+          <img src="Imagens/starWars.png" alt="Printscreen da página do projeto lessons learned">
+        </div>
+      </div>
+      <div class="space"></div>
+      <input type="radio" value="recipe-app" name="trybe-projects" id="recipe-app" class="radio">
+      <label for="recipe-app"> Recipe App</label>
+      <div id="recipe-app-content" class="">
+        <br>
+        <p>Projeto Recipe App </p>
+        <br>
+        <p>Projeto desenvolvido em grupo, utilizando React, ContextApi, SAAS. Este foi o projeto de fechamento do módulo de Front-End, o objetivo foi criar um aplicativo completo, que faz consultas a API de comidas, filtra os resultados, exibe pesquisas específicas, permite que o usuário salve receitas, compartilhe links e façã login.</p>
+        <p>O resultado pode ser visto na imágem abaixo e acessando o Github Pages, pode navegar no site. <strong>O site abre pedindo login, que somente é necessário escrever um email válido e uma senha de no mínimo 8 caracteres. Esses dados não não enviados a nenhum local, servem apenas para simular um autenticação.</strong></p>
+        <br>
+        <a href="https://bruno-s-mendes.github.io/sd-010-a-project-recipes-app/#/" target="_blank">Link para acessar o projeto no Github Pages</a>
+        <br>
+        <div class="content-img">
+          <img src="Imagens/apiReeitas.png" alt="Printscreen da página do projeto lessons learned">
         </div>
       </div>
       </div>

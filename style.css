@@ -31,6 +31,8 @@ header {
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
   height: 75px;
   background-color: #E2DED0;
   position: relative;
@@ -272,7 +274,7 @@ footer {
   display: none;
 } 
 
-#lessons-learned-content {
+#pixelsArt-toDoList-content {
   display: flex;
   flex-direction: column;
   height: 0;
@@ -288,7 +290,7 @@ footer {
   z-index: 0;
 }
 
-#playground-functions-content{
+#facebook-signup-content{
   display: flex;
   flex-direction: column;
   height: 0;
@@ -299,38 +301,6 @@ footer {
   -webkit-transform: translateY(-1500px);
   -ms-transform: translateY(-1500px);
   transform: translateY(-1500px);
-  transition-duration: 0.5s;
-  position: relative;
-  z-index: 0;
-}
-
-#pixelsArt-toDoList-content{
-  display: flex;
-  flex-direction: column;
-  height: 0;
-  justify-content: center;
-  background-color: #616c59;
-  border: solid white 1px;
-  padding-left: 5px;
-  -webkit-transform: translateY(-2000px);
-  -ms-transform: translateY(-2000px);
-  transform: translateY(-2000px);
-  transition-duration: 0.5s;
-  position: relative;
-  z-index: 0;
-}
-
-#facebook-signup-content{
-  display: flex;
-  flex-direction: column;
-  height: 0;
-  justify-content: center;
-  background-color: #616c59;
-  border: solid white 1px;
-  padding-left: 5px;
-  -webkit-transform: translateY(-2000px);
-  -ms-transform: translateY(-2000px);
-  transform: translateY(-2000px);
   transition-duration: 0.5s;
   position: relative;
   z-index: 0;
@@ -352,7 +322,87 @@ footer {
   z-index: 0;
 }
 
-#lessons-learned:checked ~ #lessons-learned-content {
+#movie-card-content{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  justify-content: center;
+  background-color: #616c59;
+  border: solid white 1px;
+  padding-left: 5px;
+  -webkit-transform: translateY(-2000px);
+  -ms-transform: translateY(-2000px);
+  transform: translateY(-2000px);
+  transition-duration: 0.5s;
+  position: relative;
+  z-index: 0;
+}
+
+#front-end-store-content{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  justify-content: center;
+  background-color: #616c59;
+  border: solid white 1px;
+  padding-left: 5px;
+  -webkit-transform: translateY(-2000px);
+  -ms-transform: translateY(-2000px);
+  transform: translateY(-2000px);
+  transition-duration: 0.5s;
+  position: relative;
+  z-index: 0;
+}
+
+#star-wars-content{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  justify-content: center;
+  background-color: #616c59;
+  border: solid white 1px;
+  padding-left: 5px;
+  -webkit-transform: translateY(-2000px);
+  -ms-transform: translateY(-2000px);
+  transform: translateY(-2000px);
+  transition-duration: 0.5s;
+  position: relative;
+  z-index: 0;
+}
+
+#star-wars-content{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  justify-content: center;
+  background-color: #616c59;
+  border: solid white 1px;
+  padding-left: 5px;
+  -webkit-transform: translateY(-2000px);
+  -ms-transform: translateY(-2000px);
+  transform: translateY(-2000px);
+  transition-duration: 0.5s;
+  position: relative;
+  z-index: 0;
+}
+
+#recipe-app-content{
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  justify-content: center;
+  background-color: #616c59;
+  border: solid white 1px;
+  padding-left: 5px;
+  -webkit-transform: translateY(-2000px);
+  -ms-transform: translateY(-2000px);
+  transform: translateY(-2000px);
+  transition-duration: 0.5s;
+  position: relative;
+  z-index: 0;
+}
+
+#pixelsArt-toDoList:checked ~ #pixelsArt-toDoList-content {
   display: flex;
   height: auto;
   -webkit-transform: translateY(0);
@@ -361,23 +411,23 @@ footer {
   transition-duration: 1.5s;
 }
 
-#playground-functions:checked ~ #playground-functions-content {
-  height: auto;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  transition-duration: 1.5s;;
-}
-
-#pixelsArt-toDoList:checked ~ #pixelsArt-toDoList-content {
-  height: auto;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  transition-duration: 1.5s;;
-}
-
 #facebook-signup:checked ~ #facebook-signup-content {
+  height: auto;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  transition-duration: 1.5s;;
+}
+
+#shopping-cart:checked ~ #shopping-cart-content {
+  height: auto;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  transition-duration: 1.5s;;
+}
+
+#movie-card:checked ~ #movie-card-content {
   height: auto;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -385,7 +435,23 @@ footer {
   transition-duration: 1.5s;
 }
 
-#shopping-cart:checked ~ #shopping-cart-content {
+#front-end-store:checked ~ #front-end-store-content {
+  height: auto;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  transition-duration: 1.5s;
+}
+
+#star-wars:checked ~ #star-wars-content {
+  height: auto;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  transition-duration: 1.5s;
+}
+
+#recipe-app:checked ~ #recipe-app-content {
   height: auto;
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -463,4 +529,34 @@ footer {
   -ms-transform: translateY(0);
   transform: translateY(0);
   transition-duration: 1.5s;
+}
+
+#menu-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #menu-mobile {
+    display: flex;
+  }
+
+  #menu-icon {
+    color: #616C59;
+    font-size: x-large;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-list {
+    list-style: none;
+    display: none;
+  }
+
+  /* #inicio-container {
+    display: flex;
+    flex-direction: row;
+  } */
 }
