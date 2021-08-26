@@ -60,44 +60,62 @@ function email() {
   const inicioFuncMobile = () => {
     const inicioBTN = document.getElementById('mobile-inicio-btn');
     const inicioContainer = document.getElementById('inicio-container');
+    const dropdownList = document.getElementById('menu-mobile');
     const menu = document.querySelector('.list');
     menu.addEventListener('click', () => {
       (inicioBTN.checked === true)? inicioContainer.style.display = 'block' : inicioContainer.style.display = 'none';
+    });
+    inicioBTN.addEventListener('click', () => {
+      (dropdownList.className === "hide")? dropdownList.className = 'show' : dropdownList.className = 'hide';
     });
   }
   
   const contatoFuncMobile = () => {
     const contactBTN = document.getElementById('mobile-contato');
     const contactContainer = document.getElementById('formulario');
+    const dropdownList = document.getElementById('menu-mobile');
     const menu = document.querySelector('.list');
     menu.addEventListener('click', () => {
       (contactBTN.checked === true)? contactContainer.style.display = 'block' : contactContainer.style.display = 'none';
+    });
+    contactBTN.addEventListener('click', () => {
+      (dropdownList.className === "hide")? dropdownList.className = 'show' : dropdownList.className = 'hide';
     });
   }
   
   const trybeFuncMobile = () => {
     const contactBTN = document.getElementById('mobile-trybe');
     const contactContainer = document.getElementById('trybe-works');
+    const dropdownList = document.getElementById('menu-mobile');
     const menu = document.querySelector('.list');
     menu.addEventListener('click', () => {
       (contactBTN.checked === true)? contactContainer.style.display = 'block' : contactContainer.style.display = 'none';
+    });
+    contactBTN.addEventListener('click', () => {
+      (dropdownList.className === "hide")? dropdownList.className = 'show' : dropdownList.className = 'hide';
     });
   }
   
   const workFuncMobile = () => {
     const contactBTN = document.getElementById('mobile-empresa');
     const contactContainer = document.getElementById('pro-works');
+    const dropdownList = document.getElementById('menu-mobile');
     const menu = document.querySelector('.list');
     menu.addEventListener('click', () => {
       (contactBTN.checked === true)? contactContainer.style.display = 'block' : contactContainer.style.display = 'none';
+    });
+    contactBTN.addEventListener('click', () => {
+      (dropdownList.className === "hide")? dropdownList.className = 'show' : dropdownList.className = 'hide';
     });
   }
 
   function showAboutMe() {
     const windowSize = window.screen.width;
     const  aboutMe = document.getElementById('inicio-container');
+    const dropdownList = document.getElementById('menu-mobile');
     if (windowSize < 600) {
       aboutMe.className = 'show'
+      dropdownList.className = 'show';
     }
   }
 
