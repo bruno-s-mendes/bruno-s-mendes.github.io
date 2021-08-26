@@ -23,19 +23,27 @@
       <a href="index.html">
         <img src="Imagens/siteLogo.png" alt="Logo">
       </a>
-      <nav id="menu-mobile">
-        <input type="radio" value="menu" name="menu" id="menu" class="radio">
-        <label for="menu"><i id="menu-icon" class="fas fa-bars"></i></label>
-        <ul class="mobile-list">
-          <li>Sobre Mim</li>
-          <li>Trabalhos Trybe</li>
-          <li>Trabalhos para Empresas</li>
-          <li>contato</li>
-          <li>LinkedIn</li>
-          <li>Github</li>
-        </ul>
-      </nav>
+      <div id="menu-button">
+        <button type="button" id="menu-button">
+        <i id="menu-icon" class="fas fa-bars"></i></button>
+      </div>
     </header>
+    <nav id="menu-mobile" class="hide">
+      <div class="list">
+        <input type="radio" id="mobile-inicio-btn" name="menu-mobile-select" class="radio">
+        <label class="mobile-list" for="mobile-inicio-btn">Sobre Mim</label>
+        <input type="radio" id="mobile-trybe" name="menu-mobile-select" class="radio">
+        <label class="mobile-list" for="mobile-trybe">Projetos Trybe</label>
+        <input type="radio" id="mobile-empresa" name="menu-mobile-select" class="radio">
+        <label class="mobile-list" for="mobile-empresa">Trabalhos Para empresas</label>
+        <input type="radio" id="mobile-contato" name="menu-mobile-select" class="radio">
+        <label class="mobile-list" for="mobile-contato">Contato</label>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/bruno-s-mendes/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/bruno-s-mendes" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </nav>
     <section class="main-content-container">
       <div id="pro-works" class="">
         <input type="radio" value="little-life" name="pro-works" id="little-life" class="radio">
@@ -88,6 +96,7 @@
       </div>
 
       <div id="inicio-container" class="hide">
+        <h2>Sobre Mim</h2>
         <div id="inicio-container-format">
           <div class="content-container">
             <img id="fei-logo" src="Imagens/logo_fei.svg" alt="Logo da FEI">
